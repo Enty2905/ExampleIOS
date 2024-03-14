@@ -14,8 +14,8 @@ public class BT1 {
 
         if (file.exists()) {
             long fileSizeInBytes = file.length();
-            double fileSizeInKB = fileSizeInBytes * 1024.0;
-            double fileSizeInMB = fileSizeInKB * 1024.0;
+            double fileSizeInKB = fileSizeInBytes / 1024.0;
+            double fileSizeInMB = fileSizeInKB / 1024.0;
 
             System.out.println("Bytes: " + fileSizeInBytes);
             System.out.println("KB: " + fileSizeInKB);
